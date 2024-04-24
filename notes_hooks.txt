@@ -1,0 +1,42 @@
+1... Why use react?
+    When a single event leads to changes at multiple locations in the UI then it is 
+    advisable to use react to make it more smoothly handleld
+
+
+2... Hooks in react
+
+    If you want to change anything in the UI then it is handled by React itself only
+    if you want to increase a number by clicking a button then it is not increasing by itself
+    ------->UI Updation control by react<---------
+
+    Now to understand this let's see what is 'state' in the react..
+    ...In react, state is a built-in feature that allows components to keep track of their data
+       and manage their behaviour over time. State represents the dynamic data that a component
+       can maintain and update in reponse to user actions, network responses, or other events.
+
+    react gives hooks for doing this
+    With React Hooks, we can use state, and other React features, in a functional component.
+    It empowers devs to do funcitonal programming in React.
+
+    In react hooks are simply Javascript functions that we can use to isolate the reuseable part
+    from a funcitonal component. Hooks can be stateful and can manage side-effects.
+
+    To propagate dynamic variable in the UI we use useState hook How?
+
+        ::::::import it from react:::::
+        ---->import { useState } from 'react'
+
+        set the variable by destructuring it into the array How?
+        ---->let [counter, setCounter] = useState(5)
+        
+        counter stores the variable and setCounter is the function to set variable
+        set it in your functions
+
+        and then propagate it into the return element of the function by using
+        {} 
+
+        JSX interprets everything inside the {} as Javascript  Expressions
+        it must have valid JS Expressions
+        1. Any expression like ternary operator(?:)
+        2. Any variable
+        3. ANy refernce variable of the function
